@@ -1,0 +1,118 @@
+/* Career Section */
+#career-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(to right, #215379 50%, rgba(10, 52, 102, 0.7) 70%, rgba(10, 52, 102, 0) 100%);
+    transition: all 0.3s ease;
+}
+
+#career-text-content {
+    position: absolute;
+    left: 10%;
+    max-width: 500px;
+    color: white;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+#career-text-content h1 {
+    font-family: 'Arial';
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#career-text-content p {
+    font-family: 'Arial';
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    margin: 10px 0;
+}
+
+#career-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+#career-apply,
+#career-know-more {
+    font-size: 0.8rem;
+    padding: 8px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+#career-apply {
+    background-color: #007bff;
+    color: white;
+    border: 3px solid #007bff;
+}
+
+#career-apply:hover {
+    background-color: #0056b3;
+}
+
+#career-know-more {
+    background-color: #ddd;
+    color: black;
+    border: 3px solid #ddd;
+}
+
+#career-know-more:hover {
+    background-color: #b6b5b5;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    #career-section {
+        background-image: url('../images/Careersmobile.png') !important;
+        background-size: cover !important;
+        background-position: center !important; /* Adjust as needed */
+    }
+
+    #career-overlay {
+        width: 100% !important;
+        background: linear-gradient(to bottom, #215379 35%, rgba(10, 52, 102, 0.5) 60%, rgba(10, 52, 102, 0) 100%) !important;
+    }
+
+    #career-text-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100% !important; /* Increase width */
+        text-align: center;
+    }
+
+    #career-text-content h1 {
+        font-size: 3.2rem !important; /* Slightly bigger text */
+    }
+
+    #career-text-content p {
+        font-size: 1.4rem !important; /* Increase readability */
+    }
+
+    #career-buttons {
+        display: flex !important;
+        flex-direction: row !important; /* Keep buttons in a row */
+        justify-content: center !important;
+        gap: 15px;
+        margin-top: 20px !important;
+    }
+
+    #career-apply, 
+    #career-know-more {
+        width: auto; /* Keep original button width */
+        padding: 8px 40px;
+    }
+}

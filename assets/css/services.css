@@ -1,0 +1,215 @@
+/* Services Section */
+#services-section {
+    height: 60vh;
+    padding: 50px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* First Column: Title & Description */
+#services-header {
+    background-color: transparent;
+    flex-basis: 20%;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+#services-header h2 {
+    font-family: Inter, sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    margin: 0;
+    color: #000;
+    letter-spacing: -1.6px;
+}
+
+#services-header p {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    color: #00000098;
+    letter-spacing: -1.6px;
+}
+
+/* Second Column: Service Cards */
+#services-container {
+    background-color: transparent;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+/* Service Card Styles */
+#service-innosphere-1, #service-innosphere-2, #service-innosphere-3 {
+    flex: 1;
+    padding: 40px;
+    border-radius: 44px 0px 0px 44px;
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Prevent overflow of child elements */
+    word-wrap: break-word; /* Ensure text wraps inside the container */
+    word-break: break-word; /* Break words if they are too long */
+}
+
+/* Specific Background Colors for Service Cards */
+#service-innosphere-1 {
+    background-color: #E0DBD9;
+}
+
+#service-innosphere-2 {
+    background-color: #55636D;
+}
+
+#service-innosphere-3 {
+    background-color: #215379;
+}
+
+/* Service Card Content */
+#service-innosphere-content-1, #service-innosphere-content-2, #service-innosphere-content-3 {
+    background-color: transparent;
+    width: 100%; /* Ensure it takes the full available width */
+    height: 100%; /* Take up the full height of the parent container */
+    text-align: left;
+    padding: 20px; /* Remove padding to avoid space between elements */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: left; /* Center content horizontally */
+}
+
+/* Heading Styles */
+#service-innosphere-content-1 h2,
+#service-innosphere-content-2 h2,
+#service-innosphere-content-3 h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0; /* Remove margin to eliminate space between h2 and p */
+    word-wrap: break-word; /* Allow heading to wrap if too long */
+}
+
+/* Paragraph Styles */
+#service-innosphere-content-1 p,
+#service-innosphere-content-2 p,
+#service-innosphere-content-3 p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0; /* Remove margin to eliminate space between p and button */
+    word-wrap: break-word; /* Allow paragraph to wrap */
+    word-break: break-word; /* Prevent overflow with long words */
+    overflow-wrap: break-word; /* Ensure long words break to fit within */
+}
+
+/* Button Styles */
+#service-innosphere-content-1 button,
+#service-innosphere-content-2 button,
+#service-innosphere-content-3 button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px; /* Remove margin to eliminate space between p and button */
+}
+
+/* Specific Text Color */
+#service-innosphere-content-1 h2 {
+    color: #003366;
+}
+
+#service-innosphere-content-2 h2, 
+#service-innosphere-content-3 h2 {
+    color: #FFFFFF;
+}
+
+#service-innosphere-content-1 p {
+    color: #333;
+}
+
+#service-innosphere-content-2 p {
+    color: #ffffffce;
+}
+
+#service-innosphere-content-3 p {
+    color: #ffffffa1;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Stack first column (header) on top and second column below */
+    #services-section {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 20px; /* Reduce padding for mobile */
+        height: auto; /* Allow flexible height */
+    }
+
+    /* Ensure the first column (header) takes full width */
+    #services-header {
+        flex-basis: 100%; /* Header will take full width */
+        text-align: left; /* Keep the header text left-aligned */
+        margin-bottom: 10px; /* Reduce the space between header and service cards */
+    }
+
+    #services-header h2 {
+        font-size: 42px; /* Adjust the header font size */
+        margin-bottom: 5px; /* Decrease space between heading and paragraph */
+    }
+
+    /* Decrease space between the paragraph and the first service card */
+    #services-header p {
+        margin-top: 0; /* Remove any default margin at the top of the paragraph */
+    }
+
+    /* Make the service container horizontally scrollable */
+    #services-container {
+        display: flex;
+        flex-direction: row; /* Keep the cards in a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 1px; /* Reduce space between cards */
+        padding-bottom: 20px; /* Prevent scrollbars from being cut off */
+        width: 100%; /* Full width for mobile */
+        scroll-snap-type: x mandatory; /* Ensure smooth scrolling of cards */
+    }
+
+    /* Ensure the service cards don't stretch and are scrollable */
+    #service-innosphere-1,
+    #service-innosphere-2,
+    #service-innosphere-3 {
+        flex: 0 0 auto; /* Prevent flex grow and shrink */
+        width: 70%; /* Reduce the width of cards */
+        margin: 0 5px; /* Reduced margin between cards */
+        border-radius: 20px; /* Optional: Adjust radius for a more mobile-friendly look */
+        scroll-snap-align: start; /* Snap cards to start when scrolling */
+        min-height: 500px; /* Increase the height of cards */
+    }
+
+    /* Adjust heading and paragraph font sizes for better readability on mobile */
+    #service-innosphere-content-1 h2,
+    #service-innosphere-content-2 h2,
+    #service-innosphere-content-3 h2 {
+        font-size: 32px; /* Make heading smaller on mobile */
+    }
+
+    #service-innosphere-content-1 p,
+    #service-innosphere-content-2 p,
+    #service-innosphere-content-3 p {
+        font-size: 14px; /* Adjust paragraph font size */
+        line-height: 20px; /* Line height for better readability */
+    }
+
+    /* Adjust button size for mobile */
+    #service-innosphere-content-1 button,
+    #service-innosphere-content-2 button,
+    #service-innosphere-content-3 button {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 14px; /* Smaller button font size */
+        width: 120px;
+    }
+}
+

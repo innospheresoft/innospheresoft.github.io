@@ -1,0 +1,152 @@
+/* Default Navbar Styles (For Desktop) */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 30px;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    padding: 15px;
+    cursor: pointer; /* Make logo clickable */
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* Center Navigation Menu (Desktop Only) */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Contact Button */
+.contact-btn {
+    text-align: center;
+    padding: 15px;
+}
+
+.contact-btn a {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+/* Mobile Overlay Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden */
+    width: 100%; /* Cover full width */
+    height: 100%;
+    display: flex; /* Allow side-by-side layout */
+    transition: left 0.1s ease-in-out;
+    z-index: 2000;
+}
+
+
+/* Right side (Black Low Opacity with Blur) */
+.overlay-backdrop {
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Slightly reduced opacity */
+    backdrop-filter: blur(20px); /* Apply blur effect */
+    cursor: pointer; /* Indicate it is clickable */
+}
+
+
+/* Slide in when active */
+.overlay.active {
+    left: 0;
+}
+
+/* Logo inside overlay */
+.overlay-logo {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 9px;
+
+}
+
+.overlay-logo img {
+    width: 160px;
+}
+
+/* Left side (Blue background) */
+.overlay-content {
+    width: 50%;
+    height: 100%;
+    background: #215379;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Align overlay menu items */
+.overlay-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay-content li {
+    margin: 15px 0;
+}
+
+.overlay-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+        height: auto;
+    }
+
+    .logo img {
+        height: 40px; /* Reduce logo size */
+    }
+
+    .nav-menu {
+        display: none; /* Hide desktop menu */
+    }
+
+    .contact-btn {
+        padding: 5px 0;
+        margin: 0 13px;
+    }
+
+    .contact-btn a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,155 @@
+/* Footer Section */
+#footer-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    color: var(--black);
+    padding: 75px;
+    gap: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Footer Heading */
+#footer-heading-container {
+    width: 100%;
+    text-align: center;
+}
+
+#footer-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0A142F;
+}
+
+/* Footer Text */
+#footer-text-container {
+    text-align: center;
+    max-width: 850px;
+    width: 100%;
+}
+
+#footer-text {
+    color: #0A142F;
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Footer Buttons */
+#footer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#footer-buttons img {
+    padding: 10px;
+    background-color: #F7F9FB;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+/* Footer Bottom */
+#footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+/* Footer Logo */
+#footer-logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footer-logo {
+    height: 50px;
+}
+
+/* Footer Copyright */
+#footer-copyright {
+    flex: 1;
+    text-align: center;
+}
+
+/* Footer Social Icons */
+#footer-social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#footer-social-icons img {
+    height: 40px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust padding */
+    #footer-section {
+        padding: 50px 20px;
+    }
+
+    /* Adjust heading size */
+    #footer-heading {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust text size */
+    #footer-text {
+        font-size: 1rem;
+    }
+
+    /* Footer buttons image adjustments */
+    #footer-buttons img {
+        display: block;
+        width: auto; /* Ensures it keeps original size */
+        max-width: 150px; /* Prevents buttons from being too large */
+    }
+
+    /* Footer bottom in ROW layout */
+    #footer-bottom {
+        display: flex;
+        flex-direction: row; /* Now in a row */
+        align-items: center;
+        justify-content: center; /* Centers everything */
+        gap: 20px; /* Adds spacing between elements */
+        flex-wrap: wrap; /* Ensures wrapping when needed */
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Footer bottom elements - Keep them inline */
+    #footer-logo-container,
+    #footer-copyright,
+    #footer-social-icons {
+        flex: unset; /* Removes full width */
+        text-align: center;
+    }
+
+    /* Social media icons adjustment */
+    #footer-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #footer-social-icons img {
+        height: 50px;
+    }
+}
+
+

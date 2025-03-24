@@ -1,0 +1,110 @@
+/* Home Section */
+#home-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#home-text-content {
+    position: absolute;
+    left: 10%;
+    max-width: 650px;
+    color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#home-text-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 650;
+    font-size: 96px;
+    color: #003A63;
+    margin: 0;
+}
+
+#home-text-content h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    color: #003A63;
+    margin: 0;
+}
+
+#home-text-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #696C73;
+    margin: 10px 0 20px 0;
+}
+
+#home-buttons {
+    margin-top: 15px;
+    gap: 12px;
+}
+
+#home-buttons button {
+    font-size: 0.8rem;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+#home-apply {
+    background-color: #007bff;
+    color: white;
+    border: 3px solid #007bff;
+}
+
+#home-apply:hover {
+    background-color: #0056b3;
+}
+
+#home-know-more {
+    background-color: #ddd;
+    color: black;
+    border: 3px solid #ddd;
+}
+
+#home-know-more:hover {
+    background-color: #ccc;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    #home-text-content {
+        left: 0; /* Center content for smaller screens */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    #home-buttons {
+        margin-top: 20px;
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center;
+        gap: 15px;
+    }
+
+    #home-apply, #home-know-more {
+        width: 80%; /* Buttons take up 80% of the screen width */
+        max-width: 160px; /* Max width for buttons */
+    }
+
+    #home-text-content h1 {
+        font-size: 48px; /* Reduce font size on smaller screens */
+    }
+
+    #home-text-content h2 {
+        font-size: 26px; /* Adjust h2 font size */
+    }
+
+    #home-text-content p {
+        font-size: 16px; /* Reduce font size for readability */
+        margin: 5px 10px 20px 10px;
+    }
+}
