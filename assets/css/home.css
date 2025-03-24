@@ -104,7 +104,7 @@
     }
 
     #home-text-content p {
-        font-size: 114px; /* Reduce font size for readability */
+        font-size: 14px; /* Reduce font size for readability */
         margin: 5px 10px 20px 10px;
     }
 }
