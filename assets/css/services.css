@@ -193,7 +193,7 @@
     #service-innosphere-content-1 h2,
     #service-innosphere-content-2 h2,
     #service-innosphere-content-3 h2 {
-        font-size: 32px; /* Make heading smaller on mobile */
+        font-size: 28px; /* Make heading smaller on mobile */
     }
 
     #service-innosphere-content-1 p,
