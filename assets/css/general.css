@@ -1,0 +1,24 @@
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;  /* Increased size */
+    height: 80px; /* Increased size */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    display: block;
+}
+
+#backToTop svg {
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Scale up on hover */
+#backToTop:hover svg {
+    transform: scale(1.1);
+}

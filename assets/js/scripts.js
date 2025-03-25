@@ -43,3 +43,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a[href^='#']");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // Adjust for fixed navbar height
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
+
+
+document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+

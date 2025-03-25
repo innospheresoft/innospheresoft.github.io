@@ -10,7 +10,7 @@
 #home-text-content {
     position: absolute;
     left: 10%;
-    max-width: 650px;
+    max-width: 800px;
     color: white;
     z-index: 2;
     display: flex;
@@ -36,18 +36,17 @@
 #home-text-content p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 30px;
     color: #696C73;
     margin: 10px 0 20px 0;
 }
 
 #home-buttons {
-    margin-top: 15px;
     gap: 12px;
 }
 
 #home-buttons button {
-    font-size: 0.8rem;
+    font-size: 18x;
     padding: 10px 40px;
     border: none;
     cursor: pointer;
@@ -76,7 +75,7 @@
     background-color: #ccc;
 }
 
-/* Mobile View */
+/* Default Mobile View (max-width: 768px) */
 @media (max-width: 768px) {
     #home-text-content {
         left: 0; /* Center content for smaller screens */
@@ -84,8 +83,7 @@
     }
 
     #home-buttons {
-        margin-top: 20px;
-        flex-direction: row; /* Stack buttons vertically */
+        flex-direction: column; /* Stack buttons vertically */
         align-items: center;
         gap: 15px;
     }
@@ -105,6 +103,56 @@
 
     #home-text-content p {
         font-size: 14px; /* Reduce font size for readability */
-        margin: 5px 10px 20px 10px;
+        margin: 0 10px;
     }
 }
+
+/* Smaller Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    #home-text-content h1 {
+        font-size: 32px; /* Further reduce font size */
+    }
+
+    #home-text-content h2 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    #home-text-content p {
+        font-size: 12px; /* Make text readable */
+    }
+
+    #home-buttons {
+        gap: 10px; /* Reduce button gap */
+    }
+
+    #home-apply, #home-know-more {
+        width: 90%; /* Buttons take up more space */
+        max-width: 140px;
+    }
+}
+
+/* Larger Mobile Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #home-text-content h1 {
+        font-size: 45px; /* Slightly larger text */
+    }
+
+    #home-text-content h2 {
+        font-size: 28px;
+    }
+
+    #home-text-content p {
+        font-size: 16px;
+    }
+
+    #home-buttons {
+        flex-direction: row; /* Arrange buttons in a row */
+        gap: 20px;
+    }
+
+    #home-apply, #home-know-more {
+        width: 70%;
+        max-width: 180px;
+    }
+}
+

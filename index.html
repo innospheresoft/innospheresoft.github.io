@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/careers.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/general.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innospehere</title>
 </head>
@@ -320,29 +321,19 @@
     </div>
     <!-- Footer Ends -->
 
+    <!-- Update to top button Starts -->
+    <button id="backToTop">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="grey"/>
+            <polyline points="35,60 50,40 65,60" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+    </button>
+    <!-- Update to top button Ends -->
+
+    
+
+
 </body>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll("a[href^='#']");
-
-        links.forEach(link => {
-            link.addEventListener("click", function (event) {
-                event.preventDefault();
-
-                const targetId = this.getAttribute("href").substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80, // Adjust for fixed navbar height
-                        behavior: "smooth"
-                    });
-                }
-            });
-        });
-    });
-</script>
 
 <script src="assets/js/scripts.js"></script>
 
