@@ -8,9 +8,12 @@
 
 /* Container for header and options */
 #industries-container {
-    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
 }
-
 /* Industries header */
 #industries-header {
     text-align: left;
@@ -26,7 +29,7 @@
 }
 
 #industries-header p {
-    font-family: Inter, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: rgba(255, 255, 255, 0.6);
@@ -91,14 +94,12 @@
     }
 
     #industries-header p {
-        font-size: 16px;
-        max-width: 75%;
+        font-size: 14px;
+        max-width: 72%;
     }
 
     /* Remove padding-top from industries-container */
-    #industries-container {
-        padding-top: 100px;
-    }
+   
 
     /* Stacking industry cards */
     #industries-options {

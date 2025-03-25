@@ -2,8 +2,6 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 80px;  /* Increased size */
-    height: 80px; /* Increased size */
     background-color: transparent;
     border: none;
     cursor: pointer;

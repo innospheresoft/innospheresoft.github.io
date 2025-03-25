@@ -154,13 +154,14 @@
     }
 
     #about-heading {
-        font-size: 48px; /* Increased size */
+        font-size: 44px; /* Increased size */
         width: 100%;
     }
 
     #about-subheading {
-        font-size: 22px; /* Increased size */
+        font-size: 20px; /* Increased size */
         width: 100%;
+        text-align: center;
     }
 
     #about-image-container {
@@ -174,15 +175,15 @@
 
     /* Left-align About Info Section */
     #about-info-heading {
-        font-size: 26px; /* Adjusted for mobile */
+        font-size: 20px; /* Adjusted for mobile */
     }
 
     #about-info-text {
-        font-size: 18px; /* Increased readability */
+        font-size: 16px; /* Increased readability */
     }
 
     #about-know-more {
-        font-size: 18px; /* Increased size */
+        font-size: 16px; /* Increased size */
         display: block;
     }
 }

@@ -26,10 +26,10 @@
 }
 
 #services-header p {
-    font-family: Inter, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
-    color: #00000098;
-    letter-spacing: -1.6px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px;
 }
 
 /* Second Column: Service Cards */
@@ -46,7 +46,7 @@
 /* Service Card Styles */
 #service-innosphere-1, #service-innosphere-2, #service-innosphere-3 {
     flex: 1;
-    padding: 40px;
+    padding: 30px;
     border-radius: 44px 0px 0px 44px;
     display: flex;
     justify-content: center; /* Horizontally center content */
@@ -76,7 +76,7 @@
     width: 100%; /* Ensure it takes the full available width */
     height: 100%; /* Take up the full height of the parent container */
     text-align: left;
-    padding: 20px; /* Remove padding to avoid space between elements */
+
     display: flex;
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Center content vertically */
@@ -111,6 +111,7 @@
 #service-innosphere-content-3 button {
     background-color: #007bff;
     color: white;
+    width: 50%;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -147,23 +148,25 @@
         flex-direction: column; /* Stack columns vertically */
         padding: 20px; /* Reduce padding for mobile */
         height: auto; /* Allow flexible height */
+        gap: 10px;
     }
 
     /* Ensure the first column (header) takes full width */
     #services-header {
         flex-basis: 100%; /* Header will take full width */
         text-align: left; /* Keep the header text left-aligned */
-        margin-bottom: 10px; /* Reduce the space between header and service cards */
     }
 
     #services-header h2 {
-        font-size: 42px; /* Adjust the header font size */
-        margin-bottom: 5px; /* Decrease space between heading and paragraph */
+        font-size: 36px; /* Adjust the header font size */
     }
 
     /* Decrease space between the paragraph and the first service card */
     #services-header p {
         margin-top: 0; /* Remove any default margin at the top of the paragraph */
+        font-size: 16px;
+        letter-spacing: 0px;
+
     }
 
     /* Make the service container horizontally scrollable */

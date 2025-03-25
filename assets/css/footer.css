@@ -29,7 +29,6 @@
 /* Footer Text */
 #footer-text-container {
     text-align: center;
-    max-width: 850px;
     width: 100%;
 }
 
@@ -105,12 +104,12 @@
 
     /* Adjust heading size */
     #footer-heading {
-        font-size: 1.8rem;
+        font-size: 26px;
     }
 
     /* Adjust text size */
     #footer-text {
-        font-size: 1rem;
+        font-size: 14px;
     }
 
     /* Footer buttons image adjustments */
@@ -138,6 +137,7 @@
     #footer-social-icons {
         flex: unset; /* Removes full width */
         text-align: center;
+        font-size: 14px;
     }
 
     /* Social media icons adjustment */
