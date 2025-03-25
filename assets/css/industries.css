@@ -2,7 +2,7 @@
 #industries-section {
     height: 700px;
     width: 100%;
-    background: url("assets/images/IndustriesBG.png") no-repeat center center/cover;
+    background: url('../images/IndustriesBG.png') no-repeat center center / cover;
     position: relative;
 }
 
@@ -75,6 +75,7 @@
 /* Mobile View Industries Section Styles */
 @media (max-width: 768px) {
     #industries-section {
+        background: url('../images/IndustriesMobile.png') no-repeat center center / cover;
         height: 1000px; /* Ensures a taller section */
         min-height: 100vh; /* Ensures it covers at least the viewport height */
     }
@@ -91,7 +92,7 @@
 
     #industries-header p {
         font-size: 16px;
-        max-width: 100%;
+        max-width: 75%;
     }
 
     /* Remove padding-top from industries-container */
