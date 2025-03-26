@@ -216,3 +216,79 @@
     }
 }
 
+
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Stack first column (header) on top and second column below */
+    #services-section {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 20px; /* Reduce padding for mobile */
+        height: auto; /* Allow flexible height */
+        gap: 10px;
+    }
+
+    /* Ensure the first column (header) takes full width */
+    #services-header {
+        flex-basis: 100%; /* Header will take full width */
+        text-align: left; /* Keep the header text left-aligned */
+    }
+
+    #services-header h2 {
+        font-size: 30px; /* Adjust the header font size */
+    }
+
+    /* Decrease space between the paragraph and the first service card */
+    #services-header p {
+        margin-top: 0; /* Remove any default margin at the top of the paragraph */
+        font-size: 12px;
+        letter-spacing: 0px;
+
+    }
+
+    /* Make the service container horizontally scrollable */
+    #services-container {
+        display: flex;
+        flex-direction: row; /* Keep the cards in a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 1px; /* Reduce space between cards */
+        padding-bottom: 20px; /* Prevent scrollbars from being cut off */
+        width: 100%; /* Full width for mobile */
+        scroll-snap-type: x mandatory; /* Ensure smooth scrolling of cards */
+    }
+
+    /* Ensure the service cards don't stretch and are scrollable */
+    #service-innosphere-1,
+    #service-innosphere-2,
+    #service-innosphere-3 {
+        flex: 0 0 auto; /* Prevent flex grow and shrink */
+        width: 70%; /* Reduce the width of cards */
+        margin: 0 5px; /* Reduced margin between cards */
+        border-radius: 20px; /* Optional: Adjust radius for a more mobile-friendly look */
+        scroll-snap-align: start; /* Snap cards to start when scrolling */
+        min-height: 500px; /* Increase the height of cards */
+    }
+
+    /* Adjust heading and paragraph font sizes for better readability on mobile */
+    #service-innosphere-content-1 h2,
+    #service-innosphere-content-2 h2,
+    #service-innosphere-content-3 h2 {
+        font-size: 22px; /* Make heading smaller on mobile */
+    }
+
+    #service-innosphere-content-1 p,
+    #service-innosphere-content-2 p,
+    #service-innosphere-content-3 p {
+        font-size: 10px; /* Adjust paragraph font size */
+        line-height: 20px; /* Line height for better readability */
+    }
+
+    /* Adjust button size for mobile */
+    #service-innosphere-content-1 button,
+    #service-innosphere-content-2 button,
+    #service-innosphere-content-3 button {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 10px; /* Smaller button font size */
+        width: 120px;
+    }
+}
+

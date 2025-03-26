@@ -50,6 +50,7 @@
     background-color: #007bff;
     color: white;
     padding: 12px 24px;
+    width: auto;
     text-decoration: none;
     border-radius: 35px;
     font-size: 18px;
@@ -178,7 +179,7 @@
     }
 
     .contact-btn a {
-        font-size: 10px;
+        font-size: 8px;
         padding: 10px 10px;
     }
 }

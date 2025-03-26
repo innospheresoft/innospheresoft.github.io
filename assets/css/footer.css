@@ -153,3 +153,64 @@
 }
 
 
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 320px) {
+    /* Adjust padding */
+    #footer-section {
+        padding: 50px 20px;
+    }
+
+    /* Adjust heading size */
+    #footer-heading {
+        font-size: 24px;
+    }
+
+    /* Adjust text size */
+    #footer-text {
+        font-size: 12px;
+    }
+
+    /* Footer buttons image adjustments */
+    #footer-buttons img {
+        display: block;
+        width: auto; /* Ensures it keeps original size */
+        max-width: 150px; /* Prevents buttons from being too large */
+    }
+
+    /* Footer bottom in ROW layout */
+    #footer-bottom {
+        display: flex;
+        flex-direction: row; /* Now in a row */
+        align-items: center;
+        justify-content: center; /* Centers everything */
+        gap: 20px; /* Adds spacing between elements */
+        flex-wrap: wrap; /* Ensures wrapping when needed */
+        text-align: center;
+        width: 100%;
+    }
+
+    #footer-logo {
+        height: 40px;
+    }
+    /* Footer bottom elements - Keep them inline */
+    #footer-logo-container,
+    #footer-copyright,
+    #footer-social-icons {
+        flex: unset; /* Removes full width */
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Social media icons adjustment */
+    #footer-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #footer-social-icons img {
+        height: 40px;
+    }
+}
