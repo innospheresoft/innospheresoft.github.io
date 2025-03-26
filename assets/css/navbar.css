@@ -150,3 +150,35 @@
         padding: 10px 20px;
     }
 }
+
+
+
+
+
+/* Mobile View */
+@media screen and (max-width: 320px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+        height: auto;
+    }
+
+    .logo img {
+        height: 40px; /* Reduce logo size */
+    }
+
+    .nav-menu {
+        display: none; /* Hide desktop menu */
+    }
+
+    .contact-btn {
+        padding: 5px 0;
+        margin: 0 13px;
+    }
+
+    .contact-btn a {
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+}
