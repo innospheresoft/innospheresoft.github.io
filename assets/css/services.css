@@ -218,7 +218,7 @@
 
 
 /* Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     /* Stack first column (header) on top and second column below */
     #services-section {
         flex-direction: column; /* Stack columns vertically */
@@ -240,7 +240,7 @@
     /* Decrease space between the paragraph and the first service card */
     #services-header p {
         margin-top: 0; /* Remove any default margin at the top of the paragraph */
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 0px;
 
     }

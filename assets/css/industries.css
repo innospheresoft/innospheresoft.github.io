@@ -125,7 +125,53 @@
     }
 }
 
+/* Mobile View Industries Section Styles */
+@media (max-width: 360px) {
+    #industries-section {
+        background: url('../images/IndustriesMobile.png') no-repeat center center / cover;
+        height: 1000px; /* Ensures a taller section */
+        min-height: 100vh; /* Ensures it covers at least the viewport height */
+    }
 
+    /* Aligning header to the left */
+    #industries-header {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    #industries-header h1 {
+        font-size: 30px;
+    }
+
+    #industries-header p {
+        font-size: 14px;
+        max-width: 72%;
+    }
+   
+
+    /* Stacking industry cards */
+    #industries-options {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .industries-card {
+        width: 80%;
+        max-width: 330px;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .industries-card h2 {
+        font-size: 20px;
+    }
+
+    .industries-card p {
+        font-size: 12px;
+    }
+}
 
 /* Mobile View Industries Section Styles */
 @media (max-width: 320px) {
