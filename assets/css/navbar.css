@@ -15,7 +15,8 @@
 /* Logo */
 .logo {
     padding: 30px;
-    cursor: pointer; /* Make logo clickable */
+    cursor: pointer;
+    /* Make logo clickable */
 }
 
 .logo img {
@@ -60,10 +61,13 @@
 .overlay {
     position: fixed;
     top: 0;
-    left: -100%; /* Initially hidden */
-    width: 100%; /* Cover full width */
+    left: -100%;
+    /* Initially hidden */
+    width: 100%;
+    /* Cover full width */
     height: 100%;
-    display: flex; /* Allow side-by-side layout */
+    display: flex;
+    /* Allow side-by-side layout */
     transition: left 0.1s ease-in-out;
     z-index: 2000;
 }
@@ -73,9 +77,12 @@
 .overlay-backdrop {
     width: 50%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Slightly reduced opacity */
-    backdrop-filter: blur(20px); /* Apply blur effect */
-    cursor: pointer; /* Indicate it is clickable */
+    background: rgba(0, 0, 0, 0.3);
+    /* Slightly reduced opacity */
+    backdrop-filter: blur(20px);
+    /* Apply blur effect */
+    cursor: pointer;
+    /* Indicate it is clickable */
 }
 
 
@@ -106,6 +113,7 @@
     flex-direction: column;
     padding: 20px;
 }
+
 /* Align overlay menu items */
 .overlay-content ul {
     list-style: none;
@@ -124,16 +132,16 @@
 
 
 
-@media screen and (min-width: 769px) and (max-width: 836px){
-   
-.contact-btn a {
-    font-size: 12px;
-    margin: 0 20px;
-}
+@media screen and (min-width: 769px) and (max-width: 836px) {
+
+    .contact-btn a {
+        font-size: 12px;
+        margin: 0 20px;
+    }
 
 }
 
-@media screen and (min-width: 360px) and (max-width: 768px){
+@media screen and (min-width: 360px) and (max-width: 768px) {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
@@ -142,14 +150,18 @@
 
     .logo {
         padding: 20px;
-        cursor: pointer; /* Make logo clickable */
+        cursor: pointer;
+        /* Make logo clickable */
     }
+
     .logo img {
-        height: 40px; /* Reduce logo size */
+        height: 40px;
+        /* Reduce logo size */
     }
 
     .nav-menu {
-        display: none; /* Hide desktop menu */
+        display: none;
+        /* Hide desktop menu */
     }
 
     .contact-btn {
@@ -164,23 +176,27 @@
 }
 
 /* Mobile View */
-@media screen and (min-width: 290px) and (max-width: 359px){
+@media screen and (min-width: 290px) and (max-width: 359px) {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
         height: auto;
     }
+
     .logo {
         padding: 20px;
-        cursor: pointer; /* Make logo clickable */
+        cursor: pointer;
+        /* Make logo clickable */
     }
 
     .logo img {
-        height: 40px; /* Reduce logo size */
+        height: 40px;
+        /* Reduce logo size */
     }
 
     .nav-menu {
-        display: none; /* Hide desktop menu */
+        display: none;
+        /* Hide desktop menu */
     }
 
     .contact-btn {

@@ -1,6 +1,7 @@
 /* Home Section */
 #home-section {
     height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,6 +81,91 @@
     background-color: #ccc;
 }
 
+@media screen and (min-width: 769px) and (max-width: 969px) {
+   /* Home Section */
+#home-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%),
+        url('../images/homebg.png'); /* Removed conflicting background-image */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home-text-content {
+    position: absolute;
+    left: 10%;
+    max-width: 800px;
+    color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#home-text-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 650;
+    font-size: 96px;
+    color: #003A63;
+    margin: 0;
+}
+
+#home-text-content h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    color: #003A63;
+    margin: 0;
+}
+
+#home-text-content p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #003a63bb;
+    margin: 10px 0 20px 0;
+}
+
+#home-buttons {
+    gap: 12px;
+}
+
+#home-buttons button {
+    font-size: 10px;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+#home-apply {
+    background-color: #007bff;
+    color: white;
+    border: 3px solid #007bff;
+}
+
+#home-apply:hover {
+    background-color: #0056b3;
+}
+
+#home-know-more {
+    background-color: #ddd;
+    color: black;
+    border: 3px solid #ddd;
+}
+
+#home-know-more:hover {
+    background-color: #ccc;
+}
+}
+
 /* Default Mobile View (max-width: 768px) */
 @media (max-width: 768px) {
     #home-text-content {
@@ -112,42 +198,46 @@
     }
 }
 
-
-
-/* Default Mobile View (max-width: 768px) */
-@media (max-width: 375px) {
-    #home-text-content {
-        left: 0; /* Center content for smaller screens */
-        text-align: center; /* Ensure text is centered */
-    }
-
-    #home-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center;
-        gap: 15px;
-    }
-
-    #home-apply, #home-know-more {
-        width: 80%; /* Buttons take up 80% of the screen width */
-        max-width: 160px; /* Max width for buttons */
-    }
-
+@media screen and (min-width: 692px) and (max-width: 768px) {
     #home-text-content h1 {
-        font-size: 40px; /* Reduce font size on smaller screens */
+        font-size: 38px; /* Reduce font size on smaller screens */
     }
 
     #home-text-content h2 {
-        font-size: 24px; /* Adjust h2 font size */
+        font-size: 22px; /* Adjust h2 font size */
     }
 
     #home-text-content p {
-        font-size: 12px; /* Reduce font size for readability */
-        margin: 0 10px;
+        font-size: 14px; /* Reduce font size for readability */
+        margin: 0 75px;
     }
 }
+@media screen and (min-width: 516px) and (max-width: 692px) {
+    #home-text-content h1 {
+        font-size: 38px; /* Reduce font size on smaller screens */
+    }
 
+    #home-text-content h2 {
+        font-size: 22px; /* Adjust h2 font size */
+    }
+
+    #home-text-content p {
+        font-size: 14px; /* Reduce font size for readability */
+        margin: 0 50px;
+    }
+}
+@media screen and (min-width: 476px) and (max-width: 515px) {
+    #home-text-content p {
+        font-size: 12px; /* Reduce font size for readability */
+        margin: 0 50px;
+    }
+}
 /* Default Mobile View (max-width: 768px) */
-@media (max-width: 320px) {
+@media screen and (min-width: 290px) and (max-width: 475px) {
+    #home-section {
+        width: 100%;
+    }
+
     #home-text-content {
         left: 0; /* Center content for smaller screens */
         text-align: center; /* Ensure text is centered */
@@ -182,7 +272,7 @@
     }
 
     #home-text-content p {
-        font-size: 10px; /* Reduce font size for readability */
-        margin: 0 10px;
+        font-size: 12px; /* Reduce font size for readability */
+        margin: 0 20px;
     }
 }
