@@ -27,7 +27,7 @@
             <img src="assets/images/logo.png" alt="Innosphere logo">
         </div>
 
-        <!-- Centered menu for desktop only -->
+        <!-- Centered menu for desktop -->
         <ul class="nav-menu">
             <li><a href="#home-section">Home</a></li>
             <li><a href="#services-section">Services</a></li>
@@ -37,10 +37,13 @@
             <li><a href="#about-section">About</a></li>
         </ul>
 
-        <!-- Contact Button (Right Side) -->
+        <!-- Contact Button (Hidden on Mobile) -->
         <div class="contact-btn">
             <a href="#">Contact Us</a>
         </div>
+
+        <!-- Hamburger Menu (Only for Mobile) -->
+        <button class="hamburger" id="hamburger-btn">☰</button>
     </div>
 
     <!-- Mobile Overlay -->
@@ -141,48 +144,44 @@
     <!-- Industries Section Starts -->
     <div id="industries-section">
 
-        <!-- Container for both header and options -->
-        <div id="industries-container">
+        <!-- Industries header -->
+        <div id="industries-header">
+            <h1>Industries</h1>
+            <p>"A Wide Range of Business Areas Across Diverse Industries and Operational Functions"</p>
+        </div>
 
-            <!-- Industries header -->
-            <div id="industries-header">
-                <h1>Industries</h1>
-                <p>"A Wide Range of Business Areas Across Diverse Industries and Operational Functions"</p>
+        <!-- Industries options -->
+        <div id="industries-options">
+
+            <!-- Industry Card: IT -->
+            <div id="industry-it" class="industries-card">
+                <h2>Information Technology</h2>
+                <p>Outsourcing of software development, IT support, and system maintenance.</p>
             </div>
 
-            <!-- Industries options -->
-            <div id="industries-options">
-
-                <!-- Industry Card: IT -->
-                <div id="industry-it" class="industries-card">
-                    <h2>Information Technology</h2>
-                    <p>Outsourcing of software development, IT support, and system maintenance.</p>
-                </div>
-
-                <!-- Industry Card: Finance -->
-                <div id="industry-finance" class="industries-card">
-                    <h2>Finance and Accounting</h2>
-                    <p>Helps businesses maintain compliance, streamline finances, and reduce overhead costs.</p>
-                </div>
-
-                <!-- Industry Card: Manufacturing -->
-                <div id="industry-manufacturing" class="industries-card">
-                    <h2>Manufacturing and Supplies</h2>
-                    <p>Supply chain management, logistics, and procurement services.</p>
-                </div>
-
-                <!-- Industry Card: Customer-Centric -->
-                <div id="industry-customer-centric" class="industries-card">
-                    <h2>Customer-Centric Approach</h2>
-                    <p>Putting customers at the heart of everything we do, driving every decision and action.</p>
-                </div>
-
+            <!-- Industry Card: Finance -->
+            <div id="industry-finance" class="industries-card">
+                <h2>Finance and Accounting</h2>
+                <p>Helps businesses maintain compliance, streamline finances, and reduce overhead costs.</p>
             </div>
 
-        </div> <!-- End of container div -->
+            <!-- Industry Card: Manufacturing -->
+            <div id="industry-manufacturing" class="industries-card">
+                <h2>Manufacturing and Supplies</h2>
+                <p>Supply chain management, logistics, and procurement services.</p>
+            </div>
+
+            <!-- Industry Card: Customer-Centric -->
+            <div id="industry-customer-centric" class="industries-card">
+                <h2>Customer-Centric Approach</h2>
+                <p>Putting customers at the heart of everything we do, driving every decision and action.</p>
+            </div>
+
+        </div>
 
     </div>
     <!-- Industries Section Ends -->
+
 
     <!-- Resources Section -->
     <div id="resources-section">
@@ -319,14 +318,12 @@
     <!-- Update to top button Starts -->
     <button id="backToTop">
         <svg width="50" height="50" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="40" fill="grey"/>
-            <polyline points="35,60 50,40 65,60" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="50" cy="50" r="40" fill="grey" />
+            <polyline points="35,60 50,40 65,60" stroke="white" stroke-width="6" stroke-linecap="round"
+                stroke-linejoin="round" fill="none" />
         </svg>
     </button>
     <!-- Update to top button Ends -->
-
-    
-
 
 </body>
 

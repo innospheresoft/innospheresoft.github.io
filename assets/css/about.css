@@ -189,9 +189,7 @@
 }
 
 
-
-
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 477px) and (max-width: 676px) {
     #about-section {
         flex-direction: column;
         height: auto;
@@ -241,12 +239,100 @@
     }
 
     #about-heading {
-        font-size: 36px; /* Increased size */
+        font-size: 11vw; /* Adjusts based on screen width */
         width: 100%;
+        text-align: center;
+
     }
 
     #about-subheading {
+        font-size: 5vw; /* Adjusts based on screen width */
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-image-container {
+        width: 100%;
+    }
+
+    #about-image2 {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    /* Left-align About Info Section */
+    #about-info-heading {
+        font-size: 20px; /* Adjusted for mobile */
+    }
+
+    #about-info-text {
+        font-size: 16px; /* Increased readability */
+    }
+
+    #about-know-more {
         font-size: 16px; /* Increased size */
+        display: block;
+    }
+}
+
+@media screen and (min-width: 290px) and (max-width: 476px) {
+    #about-section {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* First Column Adjustments */
+    #about-first-column {
+        width: 100%;
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-text {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #about-text h1 {
+        font-size: 16vw; /* Adjusts based on screen width */
+        line-height: 1.1;
+        white-space: nowrap; /* Prevents line break */
+        display: inline-block; /* Ensures inline behavior */
+    }
+
+    /* Reduce About Image 1 size */
+    #about-image1 {
+        width: 90% !important; /* Adjust width for mobile */
+        max-width: 370px !important; /* Limit max size */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto !important; /* Center the image */
+        display: block;
+    }
+
+    /* Second Column Adjustments */
+    #about-second-column {
+        width: 100%;
+        padding: 20px;
+        align-items: flex-start; /* Align text to the left */
+        text-align: left;
+    }
+
+    #about-heading {
+        font-size: 11vw; /* Adjusts based on screen width */
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #about-subheading {
+        font-size: 5vw; /* Adjusts based on screen width */
         width: 100%;
         text-align: center;
     }

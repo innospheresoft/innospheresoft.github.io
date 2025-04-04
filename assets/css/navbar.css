@@ -10,13 +10,12 @@
     align-items: center;
     background-color: white;
     z-index: 1000;
+    padding: 0 20px;
 }
 
 /* Logo */
 .logo {
-    padding: 30px;
     cursor: pointer;
-    /* Make logo clickable */
 }
 
 .logo img {
@@ -49,13 +48,24 @@
     background-color: #007bff;
     color: white;
     padding: 12px 24px;
-    width: auto;
     text-decoration: none;
     border-radius: 35px;
     font-size: 18px;
     display: inline-block;
     margin: 0 30px;
 }
+
+/* Hamburger Menu - Hidden on Desktop */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    font-weight: bold; /* Make it bolder */
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #3a98fc; /* Customizable color */
+}
+
 
 /* Mobile Overlay Styles */
 .overlay {
@@ -146,6 +156,7 @@
         flex-direction: row;
         justify-content: space-between;
         height: auto;
+        padding: 0px;
     }
 
     .logo {
@@ -165,13 +176,14 @@
     }
 
     .contact-btn {
-        padding: 5px 0;
-        margin: 0;
+        display: none;
     }
 
-    .contact-btn a {
-        font-size: 10px;
-        padding: 10px 10px;
+
+    /* Show Hamburger Button */
+    .hamburger {
+        display: block;
+        padding: 0 25px;
     }
 }
 
@@ -181,6 +193,7 @@
         flex-direction: row;
         justify-content: space-between;
         height: auto;
+        padding: 0px;
     }
 
     .logo {
@@ -200,12 +213,14 @@
     }
 
     .contact-btn {
-        padding: 2px 0;
+        display: none;
     }
 
-    .contact-btn a {
-        font-size: 8px;
-        padding: 10px 10px;
-        margin: 0 20px;
+
+    /* Show Hamburger Button */
+    .hamburger {
+        display: block;
+        padding: 0 25px;
     }
 }
+

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const logo = document.getElementById("logo"); // Navbar logo
+    const hamburger = document.getElementById("hamburger-btn"); // Hamburger button
     const overlay = document.getElementById("overlay");
-    const menuItems = document.querySelectorAll(".overlay-content a"); // All menu links
+    const menuItems = document.querySelectorAll(".overlay-content a"); // Menu links
     const overlayLogo = document.getElementById("overlay-logo"); // Logo inside overlay
     const overlayBackdrop = document.getElementById("overlay-backdrop"); // Clickable black area
     const body = document.body;
@@ -24,9 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    logo.addEventListener("click", toggleOverlay);
-    overlayLogo.addEventListener("click", closeOverlay);
-    overlayBackdrop.addEventListener("click", closeOverlay); // Close when clicking black area
+    // Only the hamburger button toggles the overlay now
+    hamburger.addEventListener("click", toggleOverlay); // Open overlay when clicking hamburger
+    overlayLogo.addEventListener("click", closeOverlay); // Close overlay when clicking overlay logo
+    overlayBackdrop.addEventListener("click", closeOverlay); // Close overlay when clicking black area
 
     menuItems.forEach(item => {
         item.addEventListener("click", function (event) {
@@ -42,15 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("a[href^='#']");
-
-    links.forEach(link => {
+    // Smooth Scrolling for all menu links
+    document.querySelectorAll("a[href^='#']").forEach(link => {
         link.addEventListener("click", function (event) {
             event.preventDefault();
-
             const targetId = this.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
 
