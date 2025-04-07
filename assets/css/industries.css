@@ -50,7 +50,7 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 365px;
+    width: 350px;
     height: 250px;
     flex-shrink: 0; /* Prevents shrinking */
     transition: transform 0.3s ease-in-out;
