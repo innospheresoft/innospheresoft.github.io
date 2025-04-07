@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
 
     function isMobile() {
-        return window.innerWidth <= 768;
+        return window.innerWidth <= 1236;
     }
 
     function toggleOverlay() {

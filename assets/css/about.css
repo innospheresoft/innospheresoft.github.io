@@ -102,8 +102,113 @@
     font-weight: bold;
     margin-top: 10px;
 }
-
-@media screen and (min-width: 851px) and (max-width: 1036px) {
+@media screen and (min-width: 910px) and (max-width: 1036px) {
+    /* About Section */
+    #about-section {
+        background-color: #ff000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    #about-first-column {
+        width: 60%;
+        position: relative;
+        margin-left: 10px; /* Increase this value to move it more to the right */
+    }
+    
+    #about-text {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        z-index: 2;
+    }
+    
+    #about-text h1 {
+        font-size: 11vw;
+        font-weight: 900;
+        color: #215379;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 0.9;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #about-image1 {
+        width: 63%;
+        max-width: 3250px;
+        margin-top: 110px;
+        margin-left: 200px; /* Moves the image further to the right */
+    }
+    
+    #about-second-column {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    
+    #about-heading {
+        color: #003A63;
+        font-size: 4.2vw;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 500;
+        margin: 0;
+        width: 100%;
+    }
+    
+    #about-subheading {
+        color: #003A63;
+        font-size: 1.93vw;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        margin: 0;
+        width: 100%;
+    }
+    
+    #about-image-container {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    
+    #about-image2 {
+        width: 100%;
+        border-radius: 12px;
+    }
+    
+    #about-info-heading {
+        font-family: Inter, sans-serif;
+        font-size: 2.5vw;
+        font-weight: 900;
+        margin: 10px 0 0 0;
+        letter-spacing: -1.6px;
+    }
+    
+    #about-info-text {
+        color: #00000080;
+        font-size: 1.5vw;
+        font-weight: 400;
+        letter-spacing: -0.04em;
+        margin: 5px 0 0 0;
+    }
+    
+    #about-know-more {
+        color: #007BFF;
+        font-size: 1.7vw;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    }
+@media screen and (min-width: 851px) and (max-width: 909px) {
     /* About Section */
     #about-section {
         background-color: #ff000000;
