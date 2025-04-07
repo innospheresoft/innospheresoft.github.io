@@ -167,7 +167,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
     #resources-section {
         height: auto;
         padding: 30px;
@@ -227,7 +227,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 359px) {
     #resources-section {
         height: auto;
         padding: 30px;
