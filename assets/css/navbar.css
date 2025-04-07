@@ -142,11 +142,40 @@
 
 
 
-@media screen and (min-width: 769px) and (max-width: 836px) {
+@media screen and (min-width: 769px) and (max-width: 1236px) {
 
-    .contact-btn a {
-        font-size: 12px;
-        margin: 0 20px;
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 0px;
+    }
+
+    .logo {
+        padding: 20px;
+        cursor: pointer;
+        /* Make logo clickable */
+    }
+
+    .logo img {
+        height: 40px;
+        /* Reduce logo size */
+    }
+
+    .nav-menu {
+        display: none;
+        /* Hide desktop menu */
+    }
+
+    .contact-btn {
+        display: none;
+    }
+
+
+    /* Show Hamburger Button */
+    .hamburger {
+        display: block;
+        padding: 0 25px;
     }
 
 }
